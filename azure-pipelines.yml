@@ -54,7 +54,6 @@ steps:
     goals: 'package'
 
 
-- task: Bash@3
+- task: PowerShell@2
   inputs:
-    filePath: 'cd \Programme (x86)\Microsoft Office\root\Office16'
-    arguments: 'winword'
+    filePath: 'New-Item pathtoFile\test.txt Set-Content pathToFile\test.txt ''$(Build.BuildNumber)'''
