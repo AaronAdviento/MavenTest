@@ -57,4 +57,4 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: 'New-Item C:\test.docx'
+    script: 'New-Item test.docx'
