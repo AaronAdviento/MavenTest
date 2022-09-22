@@ -54,7 +54,9 @@ steps:
     goals: 'package'
 
 
-- task: PowerShell@2
+- task: CmdLine@2
   inputs:
-    filePath: '\Program Files (x86)\Microsoft Office\root\Office16'
-    arguments: 'winword'
+    script: 'cd \Program Files (x86)\Microsoft Office\root\Office16'
+- task: CmdLine@2
+  inputs:
+    script: 'winword'
