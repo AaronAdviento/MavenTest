@@ -56,7 +56,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'cd \Programme (x86)\Microsoft Office\root\Office16'
+    script: 'cd \Programme x86\Microsoft Office\root\Office16'
 - task: CmdLine@2
   inputs:
     script: 'winword'
