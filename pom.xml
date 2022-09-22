@@ -5,6 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <packaging>jar</packaging>    
+         
+    <repository>
+         <id>robertjanisch</id>
+         <url>https://pkgs.dev.azure.com/robertjanisch/_packaging/robertjanisch/maven/v1</url>
+         <releases>
+                  <enabled>true</enabled>
+         </releases>
+         <snapshots>
+                  <enabled>true</enabled>
+         </snapshots>
+    </repository>
      
     <groupId>HelloWorld</groupId>
     <artifactId>HelloWorld</artifactId>
