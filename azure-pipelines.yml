@@ -56,10 +56,6 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: 'New-Item test.txt ''I am hungry. What is ur name'''
+    script: 'New-Item test.txt '
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+
