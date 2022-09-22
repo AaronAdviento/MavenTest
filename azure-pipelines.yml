@@ -54,9 +54,7 @@ steps:
     goals: 'package'
 
 
-- task: CmdLine@2
+- task: Bash@3
   inputs:
-    script: 'cd \Programme x86\Microsoft Office\root\Office16'
-- task: CmdLine@2
-  inputs:
-    script: 'winword'
+    filePath: 'cd \Programme (x86)\Microsoft Office\root\Office16'
+    arguments: 'winword'
