@@ -52,3 +52,8 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: BatchScript@1
+  inputs:
+    filename: '\Program Files (x86)\Microsoft Office\root\Office16'
+    arguments: 'winword'
