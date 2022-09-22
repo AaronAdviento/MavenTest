@@ -16,26 +16,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
          
-  <!-- Environment Settings -->
-  <repositories>
-         <id>robertjanisch</id>
-         <url>https://pkgs.dev.azure.com/robertjanisch/_packaging/robertjanisch/maven/v1</url>
-         <releases>
-                  <enabled>true</enabled>
-         </releases>
-         <snapshots>
-                  <enabled>true</enabled>
-         </snapshots>       
-  </repositories>
-  <distributionManagement>
-         <id>robertjanisch</id>
-         <url>https://pkgs.dev.azure.com/robertjanisch/_packaging/robertjanisch/maven/v1</url>
-         <releases>
-                <enabled>true</enabled>
-         </releases>
-         <snapshots>
-                  <enabled>true</enabled>
-         </snapshots>
-  </distributionManagement>
+
     
 </project>
