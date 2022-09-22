@@ -56,4 +56,5 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: 'New-Item pathtoFile\test.txt Set-Content pathToFile\test.txt ''$(Build.BuildNumber)'''
+    targetType: 'inline'
+    script: 'New-Item pathtoFile\test.txt'
