@@ -56,6 +56,13 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: 'New-Item test.txt '
+    script: |
+      New-Item test.docx
+      
+      Set-Content test.docsx 'Happy Friday'
 
-
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'current'
+    artifactName: ''
+    targetPath: '$(Pipeline.Workspace)'
