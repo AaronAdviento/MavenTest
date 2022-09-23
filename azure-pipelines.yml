@@ -66,3 +66,8 @@ steps:
     buildType: 'current'
     artifactName: ''
     targetPath: '$(Pipeline.Workspace)'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    publishLocation: 'pipeline'
