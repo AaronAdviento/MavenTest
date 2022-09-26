@@ -48,7 +48,7 @@ steps:
     script: |
       New-Item test.docx
       
-      Set-Content test.docsx 'Happy Friday'
+      Set-Content test.docx 'Happy Friday'
 
 - task: DownloadPipelineArtifact@2
   inputs:
